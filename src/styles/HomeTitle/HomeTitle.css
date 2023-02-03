@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.hometitle {
+  margin-top: none;
+  margin-bottom: 43px;
+  margin-left: none;
+  margin-right: none;
+}
+
+.hometitle-picture-borders {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hometitle-picture-borders_dimensions {
+  width: none;
+  height: 223px;
+}
+.hometitle-picture-borders_borders {
+  overflow: hidden;
+  margin-top: none;
+  margin-bottom: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 25px;
+}
+
+.hometitle-picture {
+  width: 100%;
+  height: none;
+  filter: brightness(70%);
+}
+
+.hometitle-picture-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hometitle-picture-text_dimensions {
+  width: none;
+  height: 223px;
+}
+.hometitle-picture-text_syntaxe {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: white;
+}/*# sourceMappingURL=HomeTitle.css.map */
