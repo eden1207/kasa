@@ -3,7 +3,15 @@
 @import "../Mixins/Mixin";
 
 .hometitle{
-    @include margin-package(none, 43px, none, none);
+    @media all and (min-width: 992px) {
+        @include margin-package(none, 43px, none, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include margin-package(none, 43px, none, none);
+    }
+    @media all and (max-width: 767px) {
+        @include margin-package(none, 20px, none, none);
+    }
 }
 
 .hometitle-picture-borders{
@@ -12,7 +20,15 @@
     justify-content: center;
     align-items: center;
     &_dimensions{
-        @include dimensions(none, 223px);
+        @media all and (min-width: 992px) {
+            @include dimensions(none, 223px);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include dimensions(none, 223px);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(none, 111px);
+        }
     }
     &_borders{
         overflow: hidden;
@@ -32,10 +48,38 @@
     justify-content: center;
     align-items: center;
     &_dimensions{
-        @include dimensions(none, 223px);
+        @media all and (min-width: 992px) {
+            @include dimensions(none, 223px);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include dimensions(none, 223px);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(60%, 111px);
+        }
+    }
+    &_borders{
+        @media all and (min-width: 992px) {
+            @include margin-package(none, none, none, none);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include margin-package(none, none, none, none);
+        }
+        @media all and (max-width: 767px) {
+            @include margin-package(none, none, 10%, none);
+        }
     }
     &_syntaxe{
-        @include syntaxe-montserrat(48px, normal);
+        @media all and (min-width: 992px) {
+            @include syntaxe-montserrat(48px, normal);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include syntaxe-montserrat(36px, normal);
+        }
+        @media all and (max-width: 767px) {
+            @include syntaxe-montserrat(24px, normal);
+            text-align: left;
+        }
         color: white;
     }
 }

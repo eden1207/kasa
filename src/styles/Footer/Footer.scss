@@ -5,20 +5,44 @@
 .footer{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    @media all and (min-width: 992px) {
+        justify-content: space-between;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        justify-content: space-between;
+    }
+    @media all and (max-width: 767px) {
+        justify-content: center;
+    }
     align-items: center;
     background-color: black;
     &_dimensions{
         @include dimensions(none, 120px);
     }
     &_borders{
-        @include padding-package(40px, 5px, 5%, 5%);
+        @media all and (min-width: 992px) {
+            @include padding-package(40px, 5px, 5%, 5%);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include padding-package(40px, 5px, 5%, 5%);
+        }
+        @media all and (max-width: 767px) {
+            @include padding-package(15px, none, 5%, 5%);
+        }
     }
 }
 
 .footer-text{
     color: white;
-    @include syntaxe-montserrat(24px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(24px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(24px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(12px, normal);
+    }
 }
 
 .logo-footer{

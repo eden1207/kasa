@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.card-collection {
+  display: grid;
+}
+@media all and (min-width: 992px) {
+  .card-collection {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f7f7f7;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .card-collection {
+    grid-template-columns: 1fr 1fr;
+    background-color: #f7f7f7;
+  }
+}
+@media all and (max-width: 767px) {
+  .card-collection {
+    grid-template-columns: 1fr;
+    background-color: none;
+  }
+}
+.card-collection_border {
+  border-radius: 20px;
+}
+@media all and (min-width: 992px) {
+  .card-collection_border {
+    margin-top: none;
+    margin-bottom: 43px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .card-collection_border {
+    margin-top: none;
+    margin-bottom: 43px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media all and (max-width: 767px) {
+  .card-collection_border {
+    margin-top: none;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: none;
+    padding-bottom: none;
+    padding-left: none;
+    padding-right: none;
+  }
+}
+@media all and (min-width: 992px) {
+  .card-collection_gap {
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    row-gap: 125px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .card-collection_gap {
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    row-gap: 125px;
+  }
+}
+@media all and (max-width: 767px) {
+  .card-collection_gap {
+    -moz-column-gap: none;
+         column-gap: none;
+    row-gap: 20px;
+  }
+}/*# sourceMappingURL=CardCollection.css.map */

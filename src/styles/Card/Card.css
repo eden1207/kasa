@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_dimensions {
+  width: none;
+  height: 255px;
+}
+
+.card-picture-borders {
+  position: absolute;
+}
+@media all and (min-width: 992px) {
+  .card-picture-borders_dimensions {
+    width: 25%;
+    height: 340px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .card-picture-borders_dimensions {
+    width: 35%;
+    height: 340px;
+  }
+}
+@media all and (max-width: 767px) {
+  .card-picture-borders_dimensions {
+    width: 90%;
+    height: 255px;
+  }
+}
+.card-picture-borders_borders {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-picture {
+  width: none;
+  height: 340px;
+  filter: brightness(70%);
+}
+
+.card-picture-text {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+@media all and (min-width: 992px) {
+  .card-picture-text_dimensions {
+    width: 90%;
+    height: 300px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .card-picture-text_dimensions {
+    width: 70%;
+    height: 300px;
+  }
+}
+@media all and (max-width: 767px) {
+  .card-picture-text_dimensions {
+    width: 90%;
+    height: 215px;
+  }
+}
+@media all and (min-width: 992px) {
+  .card-picture-text_borders {
+    margin-top: none;
+    margin-bottom: none;
+    margin-left: 25px;
+    margin-right: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .card-picture-text_borders {
+    margin-top: none;
+    margin-bottom: none;
+    margin-left: none;
+    margin-right: none;
+  }
+}
+@media all and (max-width: 767px) {
+  .card-picture-text_borders {
+    margin-top: none;
+    margin-bottom: none;
+    margin-left: 25px;
+    margin-right: none;
+  }
+}
+.card-picture-text_syntaxe {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  text-align: left;
+}/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "../Mixins/Mixin";
+
+.card-collection{
+    display: grid;
+    @media all and (min-width: 992px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #f7f7f7;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        grid-template-columns: 1fr 1fr;
+        background-color: #f7f7f7;
+    }
+    @media all and (max-width: 767px) {
+        grid-template-columns: 1fr;
+        background-color: none;
+    }
+    &_border{
+        border-radius: 20px;
+        @media all and (min-width: 992px) {
+            @include margin-package(none, 43px, 5%, 5%);
+            @include padding-package(90px, 90px, 4%, 4%);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include margin-package(none, 43px, 5%, 5%);
+            @include padding-package(90px, 90px, 4%, 4%);
+        }
+        @media all and (max-width: 767px) {
+            @include margin-package(none, 20px, 5%, 5%);
+            @include padding-package(none, none, none, none);
+        }
+    }
+    &_gap{
+        @media all and (min-width: 992px) {
+            column-gap: 5%;
+            row-gap: 125px;
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            column-gap: 5%;
+            row-gap: 125px;
+        }
+        @media all and (max-width: 767px) {
+            column-gap: none;
+            row-gap: 20px;
+        }
+    }
+}

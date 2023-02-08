@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "../Mixins/Mixin";
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_dimensions{
+        @include dimensions(none, 255px);
+    }
+}
+
+.card-picture-borders{
+    position: absolute;
+    &_dimensions{
+        @media all and (min-width: 992px) {
+            @include dimensions(25%, 340px);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include dimensions(35%, 340px);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(90%, 255px);
+        }
+    }
+    &_borders{
+        overflow: hidden;
+        border-radius: 10px;
+    }
+}
+
+.card-picture{
+    @include dimensions(none, 340px);
+    filter: brightness(70%);
+}
+
+.card-picture-text{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    &_dimensions{
+        @media all and (min-width: 992px) {
+            @include dimensions(90%, 300px);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include dimensions(70%, 300px);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(90%, 215px);
+        }
+    }
+    &_borders{
+        @media all and (min-width: 992px) {
+            @include margin-package(none, none, 25px, none);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include margin-package(none, none, none, none);
+        }
+        @media all and (max-width: 767px) {
+            @include margin-package(none, none, 25px, none);
+        }
+    }
+    &_syntaxe{
+        @include syntaxe-montserrat(18px, normal);
+        color: white;
+        text-align: left;
+    }
+}
