@@ -1,0 +1,23 @@
+.AboutCardListStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  width: none;
+  height: auto;
+}
+@media all and (min-width: 992px) {
+  .AboutCardListStyle {
+    min-height: 940px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .AboutCardListStyle {
+    min-height: 940px;
+  }
+}
+@media all and (max-width: 767px) {
+  .AboutCardListStyle {
+    min-height: 700px;
+  }
+}/*# sourceMappingURL=AboutCardCollection.css.map */
