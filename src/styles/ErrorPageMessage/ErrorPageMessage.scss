@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "../Mixins/Mixin";
+
+$orange: #FF6060;
+
+.ErrorPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @include margin-package(200px, none, none, none);
+}
+
+.ErrorPageText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &_dimensions{
+        @media all and (min-width: 992px) {
+            @include dimensions(none, 300px);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include dimensions(none, 300px);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(75%, 300px);
+        }
+    }
+    &_borders{
+        @include margin-package(none, 200px, none, none);
+    }
+}
+
+.logo_404{
+    @include dimensions(50%, auto);
+}
+
+.ErrorMessage404{
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(36px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(27px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(18px, normal);
+    }
+    color: $orange;
+}
+
+.ErrorMessageLink{
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(18px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(16px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(14px, normal);
+    }
+    color: $orange;
+    text-decoration: none;
+}
+
+.ErrorMessageLink:hover{
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(18px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(16px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(14px, normal);
+    }
+    color: $orange;
+    text-decoration: none;
+    border-bottom: 1px $orange solid;
+}

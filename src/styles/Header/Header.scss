@@ -23,8 +23,7 @@ $orange: #FF6060;
 
 .logo{
     @media all and (max-width: 767px) {
-        width: 150px;
-        height: auto;
+        @include dimensions(150px, auto);
     }
 }
 

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.ErrorPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: none;
+  margin-left: none;
+  margin-right: none;
+}
+
+.ErrorPageText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (min-width: 992px) {
+  .ErrorPageText_dimensions {
+    width: none;
+    height: 300px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .ErrorPageText_dimensions {
+    width: none;
+    height: 300px;
+  }
+}
+@media all and (max-width: 767px) {
+  .ErrorPageText_dimensions {
+    width: 75%;
+    height: 300px;
+  }
+}
+.ErrorPageText_borders {
+  margin-top: none;
+  margin-bottom: 200px;
+  margin-left: none;
+  margin-right: none;
+}
+
+.logo_404 {
+  width: 50%;
+  height: auto;
+}
+
+.ErrorMessage404 {
+  color: #FF6060;
+}
+@media all and (min-width: 992px) {
+  .ErrorMessage404 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .ErrorMessage404 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 767px) {
+  .ErrorMessage404 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+.ErrorMessageLink {
+  color: #FF6060;
+  text-decoration: none;
+}
+@media all and (min-width: 992px) {
+  .ErrorMessageLink {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .ErrorMessageLink {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 767px) {
+  .ErrorMessageLink {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.ErrorMessageLink:hover {
+  color: #FF6060;
+  text-decoration: none;
+  border-bottom: 1px #FF6060 solid;
+}
+@media all and (min-width: 992px) {
+  .ErrorMessageLink:hover {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .ErrorMessageLink:hover {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 767px) {
+  .ErrorMessageLink:hover {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}/*# sourceMappingURL=ErrorPageMessage.css.map */
