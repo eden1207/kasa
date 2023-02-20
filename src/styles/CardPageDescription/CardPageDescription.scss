@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "../Mixins/Mixin";
+
+.cardpage-picture-borders{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_dimensions{
+        @media all and (min-width: 992px) {
+            @include dimensions(none, 415px);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include dimensions(none, 415px);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(none, 255px);
+        }
+    }
+    &_borders{
+        overflow: hidden;
+        @media all and (min-width: 992px) {
+            @include margin-package(none, 43px, 5%, 5%);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include margin-package(none, 43px, 5%, 5%);
+        }
+        @media all and (max-width: 767px) {
+            @include margin-package(10px, 20px, 5%, 5%);
+        }
+        border-radius: 25px;
+    }
+}
+
+.cardpage-picture{
+    @media all and (min-width: 992px) {
+        @include dimensions(none, 1100px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(none, 700px);
+    }
+    @media all and (max-width: 767px) {
+        @include dimensions(none, 600px);
+    }
+}
+
+.arrow{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_dimensions{
+        @media all and (min-width: 992px) {
+            @include dimensions(none, 415px);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include dimensions(none, 415px);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(none, 255px);
+        }
+    }
+    &_borders{
+        @media all and (min-width: 992px) {
+            @include margin-package(-460px, 43px, 6%, 6%);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include margin-package(-460px, 43px, 6%, 6%);
+        }
+        @media all and (max-width: 767px) {
+            @include margin-package(-275px, 20px, 6%, 6%);
+        }
+    }
+}
+
+.arrow-style{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(52px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(52px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(25px, normal);
+    }
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+.cardpagetitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media all and (min-width: 992px) {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    @media all and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &_borders{
+        @media all and (min-width: 992px) {
+            @include margin-package(none, none, 5%, 5%);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include margin-package(none, none, 5%, 5%);
+        }
+        @media all and (max-width: 767px) {
+            @include margin-package(none, none, 5%, 5%);
+        }
+    }
+}
+
+.Introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @media all and (min-width: 992px) {
+        @include dimensions(80%, 150px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(75%, 150px);
+    }
+    @media all and (max-width: 767px) {
+        @include dimensions(100%, 120px);
+    }
+}
+
+.Introduction-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @media all and (min-width: 992px) {
+        @include dimensions(none, 45px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(none, 45px);
+    }
+    @media all and (max-width: 767px) {
+        @include dimensions(none, 30px);
+    }
+}
+
+.Introduction-content h2{
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(36px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(27px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(18px, normal);
+    }
+    color: #FF6060;
+    text-align: left;
+}
+
+
+
+.Introduction-content h3{
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(18px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(16px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(14px, normal);
+    }
+    color: #FF6060;
+    text-align: left;
+}
+
+.cardpage-tags{
+    display: flex;
+    justify-content: wrap;
+    align-items: center;
+    @include dimensions(90%, auto);
+    list-style-type: none;
+    gap: 2%;
+    @include margin-package(none, none, -40px, none);
+}
+
+.cardpage-tags-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(150px, auto);
+    min-height: 25px;
+    background-color: #FF6060;
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(14px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(12px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(10px, normal);
+    }
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+
+
+.profil-square{
+    @media all and (min-width: 992px) {
+        @include dimensions(20%, 150px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(25%, 150px);
+    }
+    @media all and (max-width: 767px) {
+        @include dimensions(100%, 40px);
+    }
+
+    display: flex;
+
+    @media all and (min-width: 768px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    @media all and (max-width: 767px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    @media all and (min-width: 992px) {
+        row-gap: 25px;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        row-gap: 40px;
+    }
+    @media all and (max-width: 767px) {
+        /*row-gap: 25px;*/
+    }
+}
+
+
+
+
+
+
+
+.starline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media all and (min-width: 992px) {
+        @include dimensions(155px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(115px, none);
+    }
+    @media all and (max-width: 767px) {
+        @include dimensions(105px, none);
+    }
+    gap: 5px;
+}
+
+.gray-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(30px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(20px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(15px, normal);
+    }
+    color: #e3e3e3;
+}
+
+.orange-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(30px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(20px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(15px, normal);
+    }
+    color: #FF6060;
+}

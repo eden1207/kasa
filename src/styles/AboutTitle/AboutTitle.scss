@@ -2,18 +2,6 @@
 
 @import "../Mixins/Mixin";
 
-.abouttitle{
-    @media all and (min-width: 992px) {
-        @include margin-package(none, 43px, none, none);
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
-        @include margin-package(none, 43px, none, none);
-    }
-    @media all and (max-width: 767px) {
-        @include margin-package(10px, 20px, none, none);
-    }
-}
-
 .abouttitle-picture-borders{
     display: flex;
     justify-content: center;
@@ -23,7 +11,15 @@
     }
     &_borders{
         overflow: hidden;
-        @include margin-package(none, none, 5%, 5%);
+        @media all and (min-width: 992px) {
+            @include margin-package(none, 43px, 5%, 5%);
+        }
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include margin-package(none, 43px, 5%, 5%);
+        }
+        @media all and (max-width: 767px) {
+            @include margin-package(10px, 20px, 5%, 5%);
+        }
         border-radius: 25px;
     }
 }

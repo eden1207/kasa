@@ -1,29 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@media all and (min-width: 992px) {
-  .abouttitle {
-    margin-top: none;
-    margin-bottom: 43px;
-    margin-left: none;
-    margin-right: none;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .abouttitle {
-    margin-top: none;
-    margin-bottom: 43px;
-    margin-left: none;
-    margin-right: none;
-  }
-}
-@media all and (max-width: 767px) {
-  .abouttitle {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: none;
-    margin-right: none;
-  }
-}
-
 .abouttitle-picture-borders {
   display: flex;
   justify-content: center;
@@ -35,11 +10,31 @@
 }
 .abouttitle-picture-borders_borders {
   overflow: hidden;
-  margin-top: none;
-  margin-bottom: none;
-  margin-left: 5%;
-  margin-right: 5%;
   border-radius: 25px;
+}
+@media all and (min-width: 992px) {
+  .abouttitle-picture-borders_borders {
+    margin-top: none;
+    margin-bottom: 43px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .abouttitle-picture-borders_borders {
+    margin-top: none;
+    margin-bottom: 43px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media all and (max-width: 767px) {
+  .abouttitle-picture-borders_borders {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 .abouttitle-picture {

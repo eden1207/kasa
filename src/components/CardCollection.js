@@ -9,7 +9,7 @@ export default function CardCollection() {
     return(
         <div className='card-collection card-collection_border card-collection_gap'>
             {dataList.map(({ id, title, cover }) => 
-                <Card key={id} title={title} cover={cover} />
+                <Card key={id} id={id} title={title} cover={cover} />
             )}
         </div>
     )

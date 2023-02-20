@@ -5,8 +5,8 @@ import '../styles/AboutTitle/AboutTitle.css'
 
 export default function HomeTitle() {
     return(
-        <div className='abouttitle'>
-            <div className='abouttitle-picture-borders abouttitle-picture-borders_dimensions abouttitle-picture-borders_borders'><img src={picture_kalen_emsley} alt="montagne" className='abouttitle-picture' /></div>
+        <div className='abouttitle-picture-borders abouttitle-picture-borders_dimensions abouttitle-picture-borders_borders'>
+            <img src={picture_kalen_emsley} alt="montagne" className='abouttitle-picture' />
         </div>
     )
 }
