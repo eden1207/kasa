@@ -18,11 +18,7 @@
     }
     &_border{
         border-radius: 20px;
-        @media all and (min-width: 992px) {
-            @include margin-package(none, 43px, 5%, 5%);
-            @include padding-package(90px, 90px, 4%, 4%);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include margin-package(none, 43px, 5%, 5%);
             @include padding-package(90px, 90px, 4%, 4%);
         }
@@ -32,11 +28,7 @@
         }
     }
     &_gap{
-        @media all and (min-width: 992px) {
-            column-gap: 5%;
-            row-gap: 125px;
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             column-gap: 5%;
             row-gap: 125px;
         }

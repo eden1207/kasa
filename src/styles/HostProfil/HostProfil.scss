@@ -6,11 +6,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    @media all and (min-width: 992px) {
-        @include dimensions(85%, none);
-        gap: 25px;
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         @include dimensions(85%, none);
         gap: 25px;
     }

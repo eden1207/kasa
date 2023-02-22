@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo_404 from '../assets/404.png'
-import '../styles/ErrorPageMessage/ErrorPageMessage.css'
+import logo_404 from '../../assets/404.png'
+import '../../styles/ErrorPageMessage/ErrorPageMessage.css'
 
 export default function ErrorPageMessage() {
     return(

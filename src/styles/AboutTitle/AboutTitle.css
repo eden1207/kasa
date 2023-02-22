@@ -12,15 +12,7 @@
   overflow: hidden;
   border-radius: 25px;
 }
-@media all and (min-width: 992px) {
-  .abouttitle-picture-borders_borders {
-    margin-top: none;
-    margin-bottom: 43px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) {
   .abouttitle-picture-borders_borders {
     margin-top: none;
     margin-bottom: 43px;

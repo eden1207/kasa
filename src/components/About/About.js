@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../Shared/Header'
 import AboutTitle from './AboutTitle'
-import Footer from './Footer'
+import Footer from '../Shared/Footer'
 import AboutCardCollection from './AboutCardCollection'
 
 export default function About() {

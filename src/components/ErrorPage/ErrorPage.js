@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../Shared/Header'
 import ErrorPageMessage from './ErrorPageMessage'
-import Footer from './Footer'
+import Footer from '../Shared/Footer'
 
 export default function ErrorPage() {
     return(

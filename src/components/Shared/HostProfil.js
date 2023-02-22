@@ -1,5 +1,6 @@
 import React from 'react'
-import '../styles/HostProfil/HostProfil.css'
+import PropTypes from 'prop-types';
+import '../../styles/HostProfil/HostProfil.css'
 
 
 export default function HostProfil({ host }) {
@@ -11,4 +12,8 @@ export default function HostProfil({ host }) {
             </div>
         </div>
     )
+}
+
+HostProfil.propTypes = {
+    host: PropTypes.object
 }

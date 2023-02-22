@@ -3,10 +3,7 @@
 @import "../Mixins/Mixin";
 
 .hometitle{
-    @media all and (min-width: 992px) {
-        @include margin-package(none, 43px, none, none);
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         @include margin-package(none, 43px, none, none);
     }
     @media all and (max-width: 767px) {
@@ -20,10 +17,7 @@
     justify-content: center;
     align-items: center;
     &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(none, 223px);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include dimensions(none, 223px);
         }
         @media all and (max-width: 767px) {
@@ -48,10 +42,7 @@
     justify-content: center;
     align-items: center;
     &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(none, 223px);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include dimensions(none, 223px);
         }
         @media all and (max-width: 767px) {
@@ -59,10 +50,7 @@
         }
     }
     &_borders{
-        @media all and (min-width: 992px) {
-            @include margin-package(none, none, none, none);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include margin-package(none, none, none, none);
         }
         @media all and (max-width: 767px) {

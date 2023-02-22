@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../Shared/Header'
 import HomeTitle from './HomeTitle'
 import CardCollection from './CardCollection'
-import Footer from './Footer'
+import Footer from '../Shared/Footer'
 
 export default function Home() {
     return(

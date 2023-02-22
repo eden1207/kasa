@@ -11,10 +11,7 @@
     }
     &_borders{
         overflow: hidden;
-        @media all and (min-width: 992px) {
-            @include margin-package(none, 43px, 5%, 5%);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include margin-package(none, 43px, 5%, 5%);
         }
         @media all and (max-width: 767px) {

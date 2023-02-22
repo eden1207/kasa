@@ -16,24 +16,9 @@
     }
 }
 
-$nombre_de_fenetres: 4;
-
-@for $i from 1 through $nombre_de_fenetres{
-    .JS-text#{$i}{
-        display: none;
-    }
-    
-    .JS-openWindow#{$i}{
-        display: flex;
-    }
-    
-    .JS-closeWindow#{$i}{
-        display: none;
-    }
-}
-
 .styleBtn{
     z-index: 2;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ff6060;
@@ -45,10 +30,7 @@ $nombre_de_fenetres: 4;
         @media all and (min-width: 992px) {
             @include padding-package(none, none, 3%, 3%);
         }
-        @media all and (min-width: 768px) and (max-width: 991px) {
-            @include padding-package(none, none, 2%, 2%);
-        }
-        @media all and (max-width: 767px) {
+        @media all and (max-width: 991px) {
             @include padding-package(none, none, 2%, 2%);
         }
         border: none;
@@ -70,11 +52,9 @@ $nombre_de_fenetres: 4;
 
 .styleContaint{
     z-index: 1;
+    display: flex;
     justify-content: center;
-    @media all and (min-width: 992px) {
-        align-items: center;
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         align-items: center;
     }
     @media all and (max-width: 767px) {
@@ -82,10 +62,7 @@ $nombre_de_fenetres: 4;
     }
     background-color: #f7f7f7;
     &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(100%, 146px);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include dimensions(100%, 146px);
         }
         @media all and (max-width: 767px) {
@@ -110,4 +87,8 @@ $nombre_de_fenetres: 4;
         color: #ff6060;
         text-align: left;
     }
+}
+
+.styleContaint_list{
+    border: 1px solid red;
 }

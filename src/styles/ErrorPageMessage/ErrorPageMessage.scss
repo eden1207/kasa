@@ -18,10 +18,7 @@ $orange: #FF6060;
     justify-content: space-between;
     align-items: center;
     &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(none, 300px);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include dimensions(none, 300px);
         }
         @media all and (max-width: 767px) {

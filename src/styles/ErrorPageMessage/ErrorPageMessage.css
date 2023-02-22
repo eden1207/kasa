@@ -16,13 +16,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media all and (min-width: 992px) {
-  .ErrorPageText_dimensions {
-    width: none;
-    height: 300px;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) {
   .ErrorPageText_dimensions {
     width: none;
     height: 300px;

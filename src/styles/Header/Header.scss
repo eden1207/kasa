@@ -9,10 +9,7 @@ $orange: #FF6060;
     justify-content: space-between;
     align-items: center;
     &_border{
-        @media all and (min-width: 992px) {
-            @include padding-package(40px, 40px, 5%, 2%);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include padding-package(40px, 40px, 5%, 2%);
         }
         @media all and (max-width: 767px) {
@@ -29,20 +26,15 @@ $orange: #FF6060;
 
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(22%, none);
-            min-width: 300px;
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
-            @include dimensions(22%, none);
+        @include dimensions(22%, none);
+        @media all and (min-width: 768px) {
             min-width: 300px;
         }
         @media all and (max-width: 767px) {
-            @include dimensions(100%, none);
-            min-width: 210px;
+            min-width: 110px;
         }
     }
     &_borders{
@@ -50,32 +42,11 @@ $orange: #FF6060;
     }
 }
 
-.menu-list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(100%, none);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
-            @include dimensions(100%, none);
-        }
-        @media all and (max-width: 767px) {
-            @include dimensions(55%, none);
-        }
-    }
-}
-
-a[title*="lien_accueil_apropos"]     
-    {
+.menu-link{
     color: $orange;
     text-decoration: none;
-    @media all and (min-width: 992px) {
-        @include syntaxe-montserrat(24px, normal);
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    border-bottom: 2px white solid;
+    @media all and (min-width: 768px) {
         @include syntaxe-montserrat(24px, normal);
     }
     @media all and (max-width: 767px) {
@@ -83,15 +54,11 @@ a[title*="lien_accueil_apropos"]
     }
 }
 
-a[title*="lien_accueil_apropos"]:hover
-    {
+.menu-link:hover {
     color: $orange;
     border-bottom: 2px $orange solid;
     text-decoration: none;
-    @media all and (min-width: 992px) {
-        @include syntaxe-montserrat(24px, normal);
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         @include syntaxe-montserrat(24px, normal);
     }
     @media all and (max-width: 767px) {

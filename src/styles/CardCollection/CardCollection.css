@@ -23,19 +23,7 @@
 .card-collection_border {
   border-radius: 20px;
 }
-@media all and (min-width: 992px) {
-  .card-collection_border {
-    margin-top: none;
-    margin-bottom: 43px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) {
   .card-collection_border {
     margin-top: none;
     margin-bottom: 43px;
@@ -59,14 +47,7 @@
     padding-right: none;
   }
 }
-@media all and (min-width: 992px) {
-  .card-collection_gap {
-    -moz-column-gap: 5%;
-         column-gap: 5%;
-    row-gap: 125px;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) {
   .card-collection_gap {
     -moz-column-gap: 5%;
          column-gap: 5%;

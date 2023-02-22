@@ -1,6 +1,6 @@
 import React from 'react'
-import picture_eric_murh from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg'
-import '../styles/HomeTitle/HomeTitle.css'
+import picture_eric_murh from '../../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg'
+import '../../styles/HomeTitle/HomeTitle.css'
 
 
 export default function HomeTitle() {

@@ -8,10 +8,7 @@
     justify-content: center;
     align-items: center;
     &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(none, 415px);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include dimensions(none, 415px);
         }
         @media all and (max-width: 767px) {
@@ -20,10 +17,7 @@
     }
     &_borders{
         overflow: hidden;
-        @media all and (min-width: 992px) {
-            @include margin-package(none, 43px, 5%, 5%);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include margin-package(none, 43px, 5%, 5%);
         }
         @media all and (max-width: 767px) {
@@ -51,10 +45,7 @@
     justify-content: space-between;
     align-items: center;
     &_dimensions{
-        @media all and (min-width: 992px) {
-            @include dimensions(none, 415px);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include dimensions(none, 415px);
         }
         @media all and (max-width: 767px) {
@@ -62,10 +53,7 @@
         }
     }
     &_borders{
-        @media all and (min-width: 992px) {
-            @include margin-package(-460px, 43px, 6%, 6%);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include margin-package(-460px, 43px, 6%, 6%);
         }
         @media all and (max-width: 767px) {
@@ -78,10 +66,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    @media all and (min-width: 992px) {
-        @include syntaxe-montserrat(52px, normal);
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         @include syntaxe-montserrat(52px, normal);
     }
     @media all and (max-width: 767px) {
@@ -311,4 +296,24 @@
         @include syntaxe-montserrat(15px, normal);
     }
     color: #FF6060;
+}
+
+/* Partie rajoutée pour la page de chaque logement*/
+
+.CardPageWindow{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media all and (min-width: 992px) {
+        @include margin-package(none, none, 5%, 5%);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include margin-package(none, none, 5%, 5%);
+    }
+    @media all and (max-width: 767px) {
+        @include margin-package(none, none, 5%, 5%);
+    }
+    min-height: 200px;
+    height: auto;
 }

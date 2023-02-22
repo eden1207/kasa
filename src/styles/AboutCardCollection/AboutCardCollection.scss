@@ -6,10 +6,7 @@
     justify-content: flex-start;
     gap: 40px;
     @include dimensions(none, auto);
-    @media all and (min-width: 992px) {
-        min-height: 940px;
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         min-height: 940px;
     }
     @media all and (max-width: 767px) {

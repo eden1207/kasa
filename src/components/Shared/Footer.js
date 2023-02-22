@@ -1,6 +1,6 @@
 import React from 'react'
-import logo_resize from '../assets/logo_resize.png'
-import '../styles/Footer/Footer.css'
+import logo_resize from '../../assets/logo_resize.png'
+import '../../styles/Footer/Footer.css'
 import { RiCopyrightLine } from 'react-icons/ri';
 
 

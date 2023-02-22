@@ -5,10 +5,7 @@
 .footer{
     display: flex;
     flex-direction: column;
-    @media all and (min-width: 992px) {
-        justify-content: space-between;
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         justify-content: space-between;
     }
     @media all and (max-width: 767px) {
@@ -20,10 +17,7 @@
         @include dimensions(none, 120px);
     }
     &_borders{
-        @media all and (min-width: 992px) {
-            @include padding-package(40px, 5px, 5%, 5%);
-        }
-        @media all and (min-width: 768px) and (max-width: 991px) {
+        @media all and (min-width: 768px) {
             @include padding-package(40px, 5px, 5%, 5%);
         }
         @media all and (max-width: 767px) {
@@ -34,10 +28,7 @@
 
 .footer-text{
     color: white;
-    @media all and (min-width: 992px) {
-        @include syntaxe-montserrat(24px, normal);
-    }
-    @media all and (min-width: 768px) and (max-width: 991px) {
+    @media all and (min-width: 768px) {
         @include syntaxe-montserrat(24px, normal);
     }
     @media all and (max-width: 767px) {
