@@ -9,7 +9,7 @@ export default function AboutCardCollection() {
     return(
         <div className='AboutCardListStyle'>
             {datasAbout.map((data) =>
-                <InformationCard key={data.id} title={data.title} text={data.text} isList={false} />
+                <InformationCard key={data.id} title={data.title} text={data.text} isCardPage={false} isList={false} />
             )}
         </div>
     )

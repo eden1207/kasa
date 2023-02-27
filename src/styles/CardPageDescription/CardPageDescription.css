@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .cardpage-picture-borders {
   z-index: 1;
@@ -119,13 +118,7 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-@media all and (min-width: 992px) {
-  .cardpagetitle {
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) {
   .cardpagetitle {
     justify-content: space-between;
     align-items: flex-start;
@@ -138,29 +131,11 @@
     align-items: center;
   }
 }
-@media all and (min-width: 992px) {
-  .cardpagetitle_borders {
-    margin-top: none;
-    margin-bottom: none;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .cardpagetitle_borders {
-    margin-top: none;
-    margin-bottom: none;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media all and (max-width: 767px) {
-  .cardpagetitle_borders {
-    margin-top: none;
-    margin-bottom: none;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+.cardpagetitle_borders {
+  margin-top: none;
+  margin-bottom: none;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .Introduction {
@@ -192,13 +167,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-@media all and (min-width: 992px) {
-  .Introduction-content {
-    width: none;
-    height: 45px;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) {
   .Introduction-content {
     width: none;
     height: 45px;
@@ -267,44 +236,56 @@
   display: flex;
   justify-content: wrap;
   align-items: center;
+}
+.cardpage-tags_dimensions {
   width: 90%;
   height: auto;
-  list-style-type: none;
-  gap: 2%;
+}
+.cardpage-tags_borders {
   margin-top: none;
   margin-bottom: none;
   margin-left: -40px;
   margin-right: none;
+}
+.cardpage-tags_aspect {
+  list-style-type: none;
+  gap: 2%;
 }
 
 .cardpage-tags-element {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cardpage-tags-element_dimensions {
   width: 150px;
   height: auto;
   min-height: 25px;
-  background-color: #FF6060;
-  color: #ffffff;
+}
+.cardpage-tags-element_borders {
   border-radius: 10px;
   border: none;
 }
+.cardpage-tags-element_aspect {
+  background-color: #FF6060;
+  color: #ffffff;
+}
 @media all and (min-width: 992px) {
-  .cardpage-tags-element {
+  .cardpage-tags-element_aspect {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: normal;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .cardpage-tags-element {
+  .cardpage-tags-element_aspect {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: normal;
   }
 }
 @media all and (max-width: 767px) {
-  .cardpage-tags-element {
+  .cardpage-tags-element_aspect {
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
     font-weight: normal;
@@ -313,24 +294,6 @@
 
 .profil-square {
   display: flex;
-}
-@media all and (min-width: 992px) {
-  .profil-square {
-    width: 20%;
-    height: 150px;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .profil-square {
-    width: 25%;
-    height: 150px;
-  }
-}
-@media all and (max-width: 767px) {
-  .profil-square {
-    width: 100%;
-    height: 40px;
-  }
 }
 @media all and (min-width: 768px) {
   .profil-square {
@@ -347,132 +310,64 @@
   }
 }
 @media all and (min-width: 992px) {
-  .profil-square {
+  .profil-square_dimensions {
+    width: 20%;
+    height: 150px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .profil-square_dimensions {
+    width: 25%;
+    height: 150px;
+  }
+}
+@media all and (max-width: 767px) {
+  .profil-square_dimensions {
+    width: 100%;
+    height: 40px;
+  }
+}
+@media all and (min-width: 992px) {
+  .profil-square_aspect {
     row-gap: 25px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .profil-square {
+  .profil-square_aspect {
     row-gap: 40px;
   }
 }
 @media all and (max-width: 767px) {
-  .profil-square {
-    /*row-gap: 25px;*/
+  .profil-square_aspect {
+    row-gap: none;
   }
 }
 
-.starline {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
-}
-@media all and (min-width: 992px) {
-  .starline {
-    width: 155px;
-    height: none;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .starline {
-    width: 115px;
-    height: none;
-  }
-}
-@media all and (max-width: 767px) {
-  .starline {
-    width: 105px;
-    height: none;
-  }
-}
-
-.gray-star {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #e3e3e3;
-}
-@media all and (min-width: 992px) {
-  .gray-star {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: normal;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .gray-star {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-  }
-}
-@media all and (max-width: 767px) {
-  .gray-star {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-  }
-}
-
-.orange-star {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FF6060;
-}
-@media all and (min-width: 992px) {
-  .orange-star {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: normal;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .orange-star {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-  }
-}
-@media all and (max-width: 767px) {
-  .orange-star {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-  }
-}
-
-/* Partie rajoutée pour la page de chaque logement*/
 .CardPageWindow {
-  border: 1px solid black;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  min-height: 200px;
-  height: auto;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
   .CardPageWindow {
-    margin-top: none;
-    margin-bottom: none;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .CardPageWindow {
-    margin-top: none;
-    margin-bottom: none;
-    margin-left: 5%;
-    margin-right: 5%;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 @media all and (max-width: 767px) {
   .CardPageWindow {
-    margin-top: none;
-    margin-bottom: none;
-    margin-left: 5%;
-    margin-right: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
   }
+}
+.CardPageWindow_dimensions {
+  width: none;
+  height: auto;
+  min-height: 300px;
+}
+.CardPageWindow_borders {
+  margin-top: none;
+  margin-bottom: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
 }/*# sourceMappingURL=CardPageDescription.css.map */

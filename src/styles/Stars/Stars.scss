@@ -1,0 +1,51 @@
+@import "../Mixins/Mixin";
+
+
+
+.starline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media all and (min-width: 992px) {
+        @include dimensions(155px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(115px, none);
+    }
+    @media all and (max-width: 767px) {
+        @include dimensions(105px, none);
+    }
+    gap: 5px;
+}
+
+.gray-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(30px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(20px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(15px, normal);
+    }
+    color: #e3e3e3;
+}
+
+.orange-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 992px) {
+        @include syntaxe-montserrat(30px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-montserrat(20px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(15px, normal);
+    }
+    color: #FF6060;
+}

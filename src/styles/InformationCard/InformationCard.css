@@ -1,10 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.AboutCardStyle {
+.AboutCardStyle1 {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .AboutCardStyle1 {
+    width: 45%;
+    height: auto;
+  }
+}
+@media all and (max-width: 767px) {
+  .AboutCardStyle1 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.AboutCardStyle2 {
   display: flex;
   flex-direction: column;
 }
 @media all and (min-width: 992px) {
-  .AboutCardStyle {
+  .AboutCardStyle2 {
     margin-top: none;
     margin-bottom: none;
     margin-left: 13%;
@@ -12,7 +29,7 @@
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .AboutCardStyle {
+  .AboutCardStyle2 {
     margin-top: none;
     margin-bottom: none;
     margin-left: 10%;
@@ -20,7 +37,7 @@
   }
 }
 @media all and (max-width: 767px) {
-  .AboutCardStyle {
+  .AboutCardStyle2 {
     margin-top: none;
     margin-bottom: none;
     margin-left: 6%;
@@ -28,7 +45,7 @@
   }
 }
 
-.styleBtn {
+.styleBtn1 {
   z-index: 2;
   display: flex;
   justify-content: space-between;
@@ -36,16 +53,24 @@
   background-color: #ff6060;
   cursor: pointer;
 }
-.styleBtn_dimensions {
-  width: 100%;
-  height: 47px;
+@media all and (min-width: 768px) {
+  .styleBtn1_dimensions {
+    width: 100%;
+    height: 47px;
+  }
 }
-.styleBtn_borders {
+@media all and (max-width: 767px) {
+  .styleBtn1_dimensions {
+    width: 100%;
+    height: 30px;
+  }
+}
+.styleBtn1_borders {
   border: none;
   border-radius: 5px;
 }
 @media all and (min-width: 992px) {
-  .styleBtn_borders {
+  .styleBtn1_borders {
     padding-top: none;
     padding-bottom: none;
     padding-left: 3%;
@@ -53,101 +78,170 @@
   }
 }
 @media all and (max-width: 991px) {
-  .styleBtn_borders {
+  .styleBtn1_borders {
     padding-top: none;
     padding-bottom: none;
     padding-left: 2%;
     padding-right: 2%;
   }
 }
-.styleBtn_text {
+.styleBtn1_text {
   color: #ffffff;
 }
 @media all and (min-width: 992px) {
-  .styleBtn_text {
+  .styleBtn1_text {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: normal;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .styleBtn_text {
+  .styleBtn1_text {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: normal;
   }
 }
 @media all and (max-width: 767px) {
-  .styleBtn_text {
+  .styleBtn1_text {
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     font-weight: normal;
   }
 }
 
-.styleContaint {
-  z-index: 1;
+.styleBtn2 {
+  z-index: 2;
   display: flex;
-  justify-content: center;
-  background-color: #f7f7f7;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  cursor: pointer;
 }
 @media all and (min-width: 768px) {
-  .styleContaint {
-    align-items: center;
+  .styleBtn2_dimensions {
+    width: 100%;
+    height: 47px;
   }
 }
 @media all and (max-width: 767px) {
-  .styleContaint {
-    align-items: flex-start;
-  }
-}
-@media all and (min-width: 768px) {
-  .styleContaint_dimensions {
+  .styleBtn2_dimensions {
     width: 100%;
-    height: 146px;
+    height: 30px;
   }
 }
-@media all and (max-width: 767px) {
-  .styleContaint_dimensions {
-    width: 100%;
-    height: auto;
-  }
-}
-.styleContaint_borders {
-  margin-top: -5px;
-  margin-bottom: none;
-  margin-left: none;
-  margin-right: none;
+.styleBtn2_borders {
+  border: none;
   border-radius: 5px;
 }
-.styleContaint_text {
-  width: 90%;
-  height: none;
-  color: #ff6060;
-  text-align: left;
+@media all and (min-width: 992px) {
+  .styleBtn2_borders {
+    padding-top: none;
+    padding-bottom: none;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media all and (max-width: 991px) {
+  .styleBtn2_borders {
+    padding-top: none;
+    padding-bottom: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+.styleBtn2_text {
+  color: #ffffff;
 }
 @media all and (min-width: 992px) {
-  .styleContaint_text {
+  .styleBtn2_text {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: normal;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .styleContaint_text {
+  .styleBtn2_text {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: normal;
   }
 }
 @media all and (max-width: 767px) {
-  .styleContaint_text {
+  .styleBtn2_text {
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
   }
 }
 
-.styleContaint_list {
-  border: 1px solid red;
+.styleContaint1 {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f7f7f7;
+}
+.styleContaint1_dimensions {
+  width: 100%;
+  height: auto;
+}
+.styleContaint1_borders {
+  padding-top: 15px;
+  padding-bottom: none;
+  padding-left: none;
+  padding-right: none;
+  border-radius: 5px;
+}
+@media all and (min-width: 768px) {
+  .styleContaint1_borders {
+    margin-top: -5px;
+    margin-bottom: none;
+    margin-left: none;
+    margin-right: none;
+  }
+}
+@media all and (max-width: 767px) {
+  .styleContaint1_borders {
+    margin-top: -10px;
+    margin-bottom: none;
+    margin-left: none;
+    margin-right: none;
+  }
+}
+
+.styleContaint2 {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+@media all and (min-width: 768px) {
+  .styleContaint2 {
+    align-items: center;
+  }
+}
+@media all and (max-width: 767px) {
+  .styleContaint2 {
+    align-items: flex-start;
+  }
+}
+@media all and (min-width: 768px) {
+  .styleContaint2_dimensions {
+    width: 100%;
+    height: 146px;
+  }
+}
+@media all and (max-width: 767px) {
+  .styleContaint2_dimensions {
+    width: 100%;
+    height: auto;
+  }
+}
+.styleContaint2_borders {
+  margin-top: -5px;
+  margin-bottom: none;
+  margin-left: none;
+  margin-right: none;
+  border-radius: 5px;
 }/*# sourceMappingURL=InformationCard.css.map */
