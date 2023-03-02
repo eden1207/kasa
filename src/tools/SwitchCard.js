@@ -26,10 +26,11 @@ export default class SwitchCard {
 
     prev() {
         /* On récupère le numéro de la page et on renvoye l'id de la page précédente vers le Link */
-        if(this.dataFactory().index === 0) {
-            return this.dataFactory().tabId[this.dataFactory().numberOfCardPage-1]
-        }else if(this.dataFactory().index !== 0) {
-            return this.dataFactory().tabId[this.dataFactory().index-1]
+        const dataObject = this.dataFactory();
+        if(dataObject.index === 0) {
+            return dataObject.tabId[dataObject.numberOfCardPage-1]
+        }else if(dataObject.index !== 0) {
+            return dataObject.tabId[dataObject.index-1]
         }else{
             console.log('value unknown')
         }
@@ -37,10 +38,11 @@ export default class SwitchCard {
 
     next() {
         /* On récupère le numéro de la page et on renvoye l'id de la page suivante vers le Link */
-        if(this.dataFactory().index === this.dataFactory().numberOfCardPage-1) {
-            return this.dataFactory().tabId[0]
-        }else if(this.dataFactory().index !== this.dataFactory().numberOfCardPage-1) {
-            return this.dataFactory().tabId[this.dataFactory().index+1]
+        const dataObject = this.dataFactory();
+        if(dataObject.index === dataObject.numberOfCardPage-1) {
+            return dataObject.tabId[0]
+        }else if(dataObject.index !== dataObject.numberOfCardPage-1) {
+            return dataObject.tabId[dataObject.index+1]
         }else{
             console.log('value unknown')
         }

@@ -1,7 +1,6 @@
-import { React, useEffect } from 'react'
+import { React } from 'react'
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { useParams, Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
 
 import '../../styles/CardPageDescription/CardPageDescription.css'
 
@@ -9,12 +8,13 @@ import { dataList } from '../../datas/dataList';
 
 import Header from '../Shared/Header'
 import Footer from '../Shared/Footer'
+import ErrorPage from '../ErrorPage/ErrorPage'
 import HostProfil from '../Shared/HostProfil.js';
 import InformationCard from '../Shared/InformationCard'
 import Stars from '../Shared/Stars'
 
 import SwitchCard from '../../tools/SwitchCard';
-import idExist from '../../tools/idExist';
+import isIdExist from '../../tools/isIdExist';
  
 
 export default function CardPage() {
@@ -23,36 +23,31 @@ export default function CardPage() {
     const { id } = useParams();
 
     /* Valeur qui indique si l'id existe. Si non, renvoye dans erreur 404 */
-    const isExist = idExist(dataList, id);
+    const idExist = isIdExist(dataList, id);
 
     /* Code de renvoye vers page d'erreur 404 */
-    const navigate = useNavigate();
 
-    useEffect(() => {
-
-        if(isExist === false){
-          navigate('*');
-        }
-
-    }, [id, isExist, navigate]);
+    if (idExist === false) {
+        return <ErrorPage />
+    }
     
 
     /* Déclaration de variables pour affichage de données */
 
-    const pageData = isExist === true ? new SwitchCard(id, dataList).dataFactory().pageData : [];
+    const pageData = new SwitchCard(id, dataList).dataFactory().pageData;
 
-    const descriptionId = isExist === true ? 'description' + id : [];
-    const decriptionTitle = isExist === true ? 'Description' : [];
-    const decriptionContent = isExist === true ? pageData.description : [];
+    const descriptionId = 'description' + id;
+    const decriptionTitle = 'Description';
+    const decriptionContent = pageData.description;
     
-    const toolsId = isExist === true ? 'tools' + id : [];
-    const toolsTitle = isExist === true ? 'Equipements' : [];
-    const toolsContent = isExist === true ? pageData.equipments : [];
+    const toolsId = 'tools' + id;
+    const toolsTitle = 'Equipements';
+    const toolsContent = pageData.equipments;
     
-    const prevCardId = isExist === true ? new SwitchCard(id, dataList).prev() : [];
-    const nextCardId = isExist === true ? new SwitchCard(id, dataList).next() : [];
+    const prevCardId = new SwitchCard(id, dataList).prev();
+    const nextCardId = new SwitchCard(id, dataList).next();
 
-    return isExist ? (
+    return (
         
         <div>
             <Header />
@@ -90,7 +85,5 @@ export default function CardPage() {
             </div>
             <Footer />
         </div>
-    ) : (
-        null
     )
 }
