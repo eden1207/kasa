@@ -54,40 +54,60 @@
   margin-right: 4%;
 }
 
-.menu-link {
+.menu-link-inactive {
   color: #FF6060;
   text-decoration: none;
   border-bottom: 2px white solid;
 }
 @media all and (min-width: 768px) {
-  .menu-link {
+  .menu-link-inactive {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: normal;
   }
 }
 @media all and (max-width: 767px) {
-  .menu-link {
+  .menu-link-inactive {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: normal;
   }
 }
 
-.menu-link:hover {
+.menu-link-active {
   color: #FF6060;
   border-bottom: 2px #FF6060 solid;
   text-decoration: none;
 }
 @media all and (min-width: 768px) {
-  .menu-link:hover {
+  .menu-link-active {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: normal;
   }
 }
 @media all and (max-width: 767px) {
-  .menu-link:hover {
+  .menu-link-active {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+
+.menu-link-inactive:hover {
+  color: #FF6060;
+  border-bottom: 2px #FF6060 solid;
+  text-decoration: none;
+}
+@media all and (min-width: 768px) {
+  .menu-link-inactive:hover {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 767px) {
+  .menu-link-inactive:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: normal;

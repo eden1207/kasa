@@ -6,11 +6,11 @@ import Footer from '../Shared/Footer'
 
 export default function Home() {
     return(
-        <div>
+        <React.Fragment>
             <Header />
             <HomeTitle />
             <CardCollection />
             <Footer />
-        </div>
+        </React.Fragment>
     )
 }

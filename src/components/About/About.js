@@ -6,11 +6,11 @@ import AboutCardCollection from './AboutCardCollection'
 
 export default function About() {
     return(
-        <div>
+        <React.Fragment>
             <Header />
             <AboutTitle />
             <AboutCardCollection />
             <Footer />
-        </div>
+        </React.Fragment>
     )
 }

@@ -1,6 +1,5 @@
-import { React } from 'react'
-import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-import { useParams, Link } from 'react-router-dom';
+import React from 'react'
+import { useParams } from 'react-router-dom';
 
 import '../../styles/CardPageDescription/CardPageDescription.css'
 
@@ -12,8 +11,9 @@ import ErrorPage from '../ErrorPage/ErrorPage'
 import HostProfil from '../Shared/HostProfil.js';
 import InformationCard from '../Shared/InformationCard'
 import Stars from '../Shared/Stars'
+import Gallery from '../Shared/Gallery'
 
-import SwitchCard from '../../tools/SwitchCard';
+import DataCard from '../../tools/DataCard';
 import isIdExist from '../../tools/isIdExist';
  
 
@@ -34,7 +34,7 @@ export default function CardPage() {
 
     /* Déclaration de variables pour affichage de données */
 
-    const pageData = new SwitchCard(id, dataList).dataFactory().pageData;
+    const pageData = new DataCard(id, dataList).dataFactory().pageData;
 
     const descriptionId = 'description' + id;
     const decriptionTitle = 'Description';
@@ -44,20 +44,20 @@ export default function CardPage() {
     const toolsTitle = 'Equipements';
     const toolsContent = pageData.equipments;
     
-    const prevCardId = new SwitchCard(id, dataList).prev();
-    const nextCardId = new SwitchCard(id, dataList).next();
+
+    function isOnePicture() {
+        if(pageData.pictures.length === 1) {
+            return true
+        } else{
+            return false
+        }
+    }
 
     return (
         
-        <div>
+        <React.Fragment>
             <Header />
-            <div className='cardpage-picture-borders cardpage-picture-borders_dimensions cardpage-picture-borders_borders'>
-                <img src={pageData.cover} alt={pageData.title} className='cardpage-picture' />
-            </div>
-            <div className='arrow arrow_dimensions arrow_borders'>
-                <Link className='arrow-style' to={'/logements/' + prevCardId}><SlArrowLeft /></Link>
-                <Link className='arrow-style' to={'/logements/' + nextCardId}><SlArrowRight /></Link>
-            </div>
+            <Gallery pictures={pageData.pictures} title={pageData.title} onePicture={isOnePicture()} />
             <div className='cardpagetitle cardpagetitle_borders'>
                 <div className='Introduction'>
                     <div className='Introduction-content'>
@@ -84,6 +84,6 @@ export default function CardPage() {
                 <InformationCard key={toolsId} title={toolsTitle} text={toolsContent} isCardPage={true} isList={true} />
             </div>
             <Footer />
-        </div>
+        </React.Fragment>
     )
 }

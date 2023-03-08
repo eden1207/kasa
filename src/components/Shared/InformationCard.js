@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import '../../styles/InformationCard/InformationCard.css'
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";

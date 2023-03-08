@@ -42,7 +42,7 @@ $orange: #FF6060;
     }
 }
 
-.menu-link{
+.menu-link-inactive{
     color: $orange;
     text-decoration: none;
     border-bottom: 2px white solid;
@@ -54,7 +54,19 @@ $orange: #FF6060;
     }
 }
 
-.menu-link:hover {
+.menu-link-active{
+    color: $orange;
+    border-bottom: 2px $orange solid;
+    text-decoration: none;
+    @media all and (min-width: 768px) {
+        @include syntaxe-montserrat(24px, normal);
+    }
+    @media all and (max-width: 767px) {
+        @include syntaxe-montserrat(12px, normal);
+    }
+}
+
+.menu-link-inactive:hover {
     color: $orange;
     border-bottom: 2px $orange solid;
     text-decoration: none;
