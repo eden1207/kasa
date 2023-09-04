@@ -7,7 +7,7 @@
 }
 .card_dimensions {
   width: none;
-  height: 255px;
+  height: 255px !important;
 }
 
 .card-picture-borders {
@@ -16,19 +16,19 @@
 @media all and (min-width: 992px) {
   .card-picture-borders_dimensions {
     width: 25%;
-    height: 340px;
+    height: 340px !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .card-picture-borders_dimensions {
     width: 35%;
-    height: 340px;
+    height: 340px !important;
   }
 }
 @media all and (max-width: 767px) {
   .card-picture-borders_dimensions {
     width: 90%;
-    height: 255px;
+    height: 255px !important;
   }
 }
 .card-picture-borders_borders {
@@ -38,7 +38,7 @@
 
 .card-picture {
   width: none;
-  height: 340px;
+  height: 340px !important;
   filter: brightness(70%);
 }
 
@@ -51,41 +51,41 @@
 @media all and (min-width: 992px) {
   .card-picture-text_dimensions {
     width: 90%;
-    height: 300px;
+    height: 300px !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .card-picture-text_dimensions {
     width: 70%;
-    height: 300px;
+    height: 300px !important;
   }
 }
 @media all and (max-width: 767px) {
   .card-picture-text_dimensions {
     width: 90%;
-    height: 215px;
+    height: 215px !important;
   }
 }
 @media all and (min-width: 992px) {
   .card-picture-text_borders {
-    margin-top: none;
-    margin-bottom: none;
+    margin-top: none !important;
+    margin-bottom: none !important;
     margin-left: 25px;
     margin-right: none;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .card-picture-text_borders {
-    margin-top: none;
-    margin-bottom: none;
+    margin-top: none !important;
+    margin-bottom: none !important;
     margin-left: none;
     margin-right: none;
   }
 }
 @media all and (max-width: 767px) {
   .card-picture-text_borders {
-    margin-top: none;
-    margin-bottom: none;
+    margin-top: none !important;
+    margin-bottom: none !important;
     margin-left: 25px;
     margin-right: none;
   }

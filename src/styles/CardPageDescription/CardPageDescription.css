@@ -18,8 +18,8 @@
   }
 }
 .cardpagetitle_borders {
-  margin-top: none;
-  margin-bottom: none;
+  margin-top: none !important;
+  margin-bottom: none !important;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -32,19 +32,19 @@
 @media all and (min-width: 992px) {
   .Introduction {
     width: 80%;
-    height: 150px;
+    height: 150px !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .Introduction {
     width: 75%;
-    height: 150px;
+    height: 150px !important;
   }
 }
 @media all and (max-width: 767px) {
   .Introduction {
     width: 100%;
-    height: 120px;
+    height: 120px !important;
   }
 }
 
@@ -56,13 +56,13 @@
 @media all and (min-width: 768px) {
   .Introduction-content {
     width: none;
-    height: 45px;
+    height: 45px !important;
   }
 }
 @media all and (max-width: 767px) {
   .Introduction-content {
     width: none;
-    height: 30px;
+    height: 30px !important;
   }
 }
 
@@ -125,11 +125,11 @@
 }
 .cardpage-tags_dimensions {
   width: 90%;
-  height: auto;
+  height: auto !important;
 }
 .cardpage-tags_borders {
-  margin-top: none;
-  margin-bottom: none;
+  margin-top: none !important;
+  margin-bottom: none !important;
   margin-left: -40px;
   margin-right: none;
 }
@@ -145,7 +145,7 @@
 }
 .cardpage-tags-element_dimensions {
   width: 150px;
-  height: auto;
+  height: auto !important;
   min-height: 25px;
 }
 .cardpage-tags-element_borders {
@@ -198,19 +198,19 @@
 @media all and (min-width: 992px) {
   .profil-square_dimensions {
     width: 20%;
-    height: 150px;
+    height: 150px !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .profil-square_dimensions {
     width: 25%;
-    height: 150px;
+    height: 150px !important;
   }
 }
 @media all and (max-width: 767px) {
   .profil-square_dimensions {
     width: 100%;
-    height: 40px;
+    height: 40px !important;
   }
 }
 @media all and (min-width: 992px) {
@@ -248,12 +248,12 @@
 }
 .CardPageWindow_dimensions {
   width: none;
-  height: auto;
+  height: auto !important;
   min-height: 300px;
 }
 .CardPageWindow_borders {
-  margin-top: none;
-  margin-bottom: 25px;
+  margin-top: none !important;
+  margin-bottom: 25px !important;
   margin-left: 5%;
   margin-right: 5%;
 }/*# sourceMappingURL=CardPageDescription.css.map */

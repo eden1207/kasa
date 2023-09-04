@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: none;
+  margin-top: 200px !important;
+  margin-bottom: none !important;
   margin-left: none;
   margin-right: none;
 }
@@ -19,25 +19,25 @@
 @media all and (min-width: 768px) {
   .ErrorPageText_dimensions {
     width: none;
-    height: 300px;
+    height: 300px !important;
   }
 }
 @media all and (max-width: 767px) {
   .ErrorPageText_dimensions {
     width: 75%;
-    height: 300px;
+    height: 300px !important;
   }
 }
 .ErrorPageText_borders {
-  margin-top: none;
-  margin-bottom: 200px;
+  margin-top: none !important;
+  margin-bottom: 200px !important;
   margin-left: none;
   margin-right: none;
 }
 
 .logo_404 {
   width: 50%;
-  height: auto;
+  height: auto !important;
 }
 
 .ErrorMessage404 {

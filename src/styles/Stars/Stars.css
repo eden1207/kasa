@@ -7,19 +7,19 @@
 @media all and (min-width: 992px) {
   .starline {
     width: 155px;
-    height: none;
+    height: none !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .starline {
     width: 115px;
-    height: none;
+    height: none !important;
   }
 }
 @media all and (max-width: 767px) {
   .starline {
     width: 105px;
-    height: none;
+    height: none !important;
   }
 }
 

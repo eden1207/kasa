@@ -6,16 +6,16 @@
 }
 @media all and (min-width: 768px) {
   .banner_border {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
     padding-left: 5%;
     padding-right: 2%;
   }
 }
 @media all and (max-width: 767px) {
   .banner_border {
-    padding-top: 15px;
-    padding-bottom: none;
+    padding-top: 15px !important;
+    padding-bottom: none !important;
     padding-left: 5%;
     padding-right: 2%;
   }
@@ -24,7 +24,7 @@
 @media all and (max-width: 767px) {
   .logo {
     width: 150px;
-    height: auto;
+    height: auto !important;
   }
 }
 
@@ -35,7 +35,7 @@
 }
 .menu_dimensions {
   width: 22%;
-  height: none;
+  height: none !important;
 }
 @media all and (min-width: 768px) {
   .menu_dimensions {
@@ -48,8 +48,8 @@
   }
 }
 .menu_borders {
-  margin-top: none;
-  margin-bottom: none;
+  margin-top: none !important;
+  margin-bottom: none !important;
   margin-left: none;
   margin-right: 4%;
 }

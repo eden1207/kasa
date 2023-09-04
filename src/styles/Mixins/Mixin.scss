@@ -1,13 +1,13 @@
 @mixin padding-package($top, $bottom, $left, $right) {
-    padding-top: $top;
-    padding-bottom: $bottom;
+    padding-top: $top !important;
+    padding-bottom: $bottom !important;
     padding-left: $left;
     padding-right: $right;
 }
 
 @mixin margin-package($top, $bottom, $left, $right) {
-    margin-top: $top;
-    margin-bottom: $bottom;
+    margin-top: $top !important;
+    margin-bottom: $bottom !important;
     margin-left: $left;
     margin-right: $right;
 }
@@ -20,5 +20,5 @@
 
 @mixin dimensions($width, $height) {
     width: $width; 
-    height: $height;
+    height: $height !important;
 }

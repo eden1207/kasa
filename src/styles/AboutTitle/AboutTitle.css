@@ -6,7 +6,7 @@
 }
 .abouttitle-picture-borders_dimensions {
   width: none;
-  height: 223px;
+  height: 223px !important;
 }
 .abouttitle-picture-borders_borders {
   overflow: hidden;
@@ -14,16 +14,16 @@
 }
 @media all and (min-width: 768px) {
   .abouttitle-picture-borders_borders {
-    margin-top: none;
-    margin-bottom: 43px;
+    margin-top: none !important;
+    margin-bottom: 43px !important;
     margin-left: 5%;
     margin-right: 5%;
   }
 }
 @media all and (max-width: 767px) {
   .abouttitle-picture-borders_borders {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -31,6 +31,6 @@
 
 .abouttitle-picture {
   width: 100%;
-  height: none;
+  height: none !important;
   filter: brightness(70%);
 }/*# sourceMappingURL=AboutTitle.css.map */

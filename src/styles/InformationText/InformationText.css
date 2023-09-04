@@ -8,20 +8,20 @@
 }
 .style-list_dimensions {
   width: 100%;
-  height: auto;
+  height: auto !important;
 }
 @media all and (min-width: 768px) {
   .style-list_borders {
-    margin-top: none;
-    margin-bottom: none;
+    margin-top: none !important;
+    margin-bottom: none !important;
     margin-left: -15px;
     margin-right: none;
   }
 }
 @media all and (max-width: 767px) {
   .style-list_borders {
-    margin-top: none;
-    margin-bottom: none;
+    margin-top: none !important;
+    margin-bottom: none !important;
     margin-left: -25px;
     margin-right: none;
   }
@@ -57,7 +57,7 @@
   color: #ff6060;
   text-align: left;
   width: 90%;
-  height: none;
+  height: none !important;
 }
 @media all and (min-width: 992px) {
   .style-text {

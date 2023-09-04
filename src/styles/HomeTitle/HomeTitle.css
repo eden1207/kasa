@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @media all and (min-width: 768px) {
   .hometitle {
-    margin-top: none;
-    margin-bottom: 43px;
+    margin-top: none !important;
+    margin-bottom: 43px !important;
     margin-left: none;
     margin-right: none;
   }
 }
 @media all and (max-width: 767px) {
   .hometitle {
-    margin-top: none;
-    margin-bottom: 20px;
+    margin-top: none !important;
+    margin-bottom: 20px !important;
     margin-left: none;
     margin-right: none;
   }
@@ -25,19 +25,19 @@
 @media all and (min-width: 768px) {
   .hometitle-picture-borders_dimensions {
     width: none;
-    height: 223px;
+    height: 223px !important;
   }
 }
 @media all and (max-width: 767px) {
   .hometitle-picture-borders_dimensions {
     width: none;
-    height: 111px;
+    height: 111px !important;
   }
 }
 .hometitle-picture-borders_borders {
   overflow: hidden;
-  margin-top: none;
-  margin-bottom: none;
+  margin-top: none !important;
+  margin-bottom: none !important;
   margin-left: 5%;
   margin-right: 5%;
   border-radius: 25px;
@@ -45,7 +45,7 @@
 
 .hometitle-picture {
   width: 100%;
-  height: none;
+  height: none !important;
   filter: brightness(70%);
 }
 
@@ -58,27 +58,27 @@
 @media all and (min-width: 768px) {
   .hometitle-picture-text_dimensions {
     width: none;
-    height: 223px;
+    height: 223px !important;
   }
 }
 @media all and (max-width: 767px) {
   .hometitle-picture-text_dimensions {
     width: 60%;
-    height: 111px;
+    height: 111px !important;
   }
 }
 @media all and (min-width: 768px) {
   .hometitle-picture-text_borders {
-    margin-top: none;
-    margin-bottom: none;
+    margin-top: none !important;
+    margin-bottom: none !important;
     margin-left: none;
     margin-right: none;
   }
 }
 @media all and (max-width: 767px) {
   .hometitle-picture-text_borders {
-    margin-top: none;
-    margin-bottom: none;
+    margin-top: none !important;
+    margin-bottom: none !important;
     margin-left: 10%;
     margin-right: none;
   }

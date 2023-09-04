@@ -25,24 +25,24 @@
 }
 @media all and (min-width: 768px) {
   .card-collection_border {
-    margin-top: none;
-    margin-bottom: 43px;
+    margin-top: none !important;
+    margin-bottom: 43px !important;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
     padding-left: 4%;
     padding-right: 4%;
   }
 }
 @media all and (max-width: 767px) {
   .card-collection_border {
-    margin-top: none;
-    margin-bottom: 20px;
+    margin-top: none !important;
+    margin-bottom: 20px !important;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: none;
-    padding-bottom: none;
+    padding-top: none !important;
+    padding-bottom: none !important;
     padding-left: none;
     padding-right: none;
   }
